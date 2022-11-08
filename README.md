@@ -34,10 +34,14 @@ Notre périmètre d'activité est local et le Product Owner du produit est l’�
 
 ### 5-  Les apprenants 
 
-
 - Développement front end :  date du rendu 17/11 à 12h30      
 - Création de la base de donnée : date du rendu 17/11 à 23h59 
 - Développement Back end :  date du rendu 23/11 à 23h59  
 - Délais : Lien Trello date du rendu 03/11 
 - Cahier des charges : date du rendu 03/11 
 - Conception : date du rendu 15/11 à 12h30
+
+
+# Diagramme de Cas d'utilisations
+
+![use case (1)](https://user-images.githubusercontent.com/93968770/200664683-cfbf5095-fb97-4103-8d39-d70fc482cb28.svg)
