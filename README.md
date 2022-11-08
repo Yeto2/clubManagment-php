@@ -22,12 +22,12 @@ Notre périmètre d'activité est local et le Product Owner du produit est l’�
 
  ####       Les fonctions demandées  :
  
-  -- Les apprenants
+  > Les apprenants
                                  
         -	Voir les clubs existants    
         -	Adhérer à un seul club 
         
-  --  Les apprenants 
+  >  Les apprenants 
   
         -	Ajouter, Modifier ou Supprimer les clubs     
         -	Ajouter, Modifier ou Supprimer les clubs
