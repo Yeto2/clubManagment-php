@@ -20,13 +20,13 @@ Notre périmètre d'activité est local et le Product Owner du produit est l’�
 ### 4- Description fonctionnelle des besoins
 
 
-|                   Les fonctions demandées                    |
-| ---------------------------- | ----------------------------- |
-|                              | -	Voir les clubs existants   |
-|       Les apprenants         | -	Adhérer à un seul club     |
-|                              |                               |
-| ---------------------------- | ----------------------------- |
-|                              |  -	Ajouter, Modifier          |
-|       Les apprenants         |     ou Supprimer les clubs    |
-|                              |  -	Ajouter, Modifier          |
-|                              |    ou Supprimer les clubs     |
+|                   Les fonctions demandées                    +
++ ---------------------------- + -----------------------------  
+                                 -	Voir les clubs existants    
+        Les apprenants           -	Adhérer à un seul club     
+                                                               
++ ---------------------------- + ----------------------------- +
+                                  -	Ajouter, Modifier           
+        Les apprenants               ou Supprimer les clubs     
+                                  -	Ajouter, Modifier           
++                              +    ou Supprimer les clubs     +
