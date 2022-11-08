@@ -20,9 +20,12 @@ Notre périmètre d'activité est local et le Product Owner du produit est l’�
 ### 4- Description fonctionnelle des besoins
 
 
-
-
- | Number | Rider        | Time  |
- | 1      | Bullet Bob   | 56:07 |
- | 2      | Clumsy Colin | DNF   |
- | 3      | Swift Susan  | 55:13 |
+|                   Les fonctions demandées                    |
+| ---------------------------- | ----------------------------- |
+| Les apprenants               | -	Voir les clubs existants    |
+|                              | -	Adhérer à un seul club      |
+| ---------------------------- | ----------------------------- |
+| Les apprenants               |  -	Ajouter, Modifier          |
+|                              |     ou Supprimer les clubs    |
+|                              |  -	Ajouter, Modifier          |
+|                              |    ou Supprimer les clubs     |
