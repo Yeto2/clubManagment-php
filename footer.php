@@ -2,7 +2,7 @@
     <div class="container">
         <img src="images/logo.png" alt="logo">
         <div class="footTxt">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores ducimus earum eum, nam, quos expedita quisquam obcaecati perferendis, totam quis possimus aliquam soluta? Provident nesciunt explicabo nam, molestiae nulla nobis?
+            Lorem ipsum, quos expedita quisquam obcaecati perferendis, totam quis possimus aliquam soluta? Provident nesciunt explicabo nam, molestiae nulla nobis?
         </div>
         <div class="icons">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
