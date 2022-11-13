@@ -13,7 +13,85 @@
 </head>
 <body>
     <?php include 'navbar.php'; ?>
-    
+        <div class="hero-sections">
+            <div class="container hero-text">
+                <h1>Clubs scolaires</h1>
+                <p class="text-center">youcode et offrir à ses adhérents un milieu agréable où ils peuvent améliorer leurs soft skills.</p>
+                <button class="btn btn-success"><a class="nav-link" href="">Découvrir plus</a></button>
+                <div class="icon-scroll" data-v-0f1e6496=""></div>
+            </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="images/club.jpg" class="d-block" alt="club">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/ecole.jpg" class="d-block" alt="ecole">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/student.jpg" class="d-block" alt="student">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- clubs section -->
+        <div class="container club-section">
+            <h3 class="col-sm-12 mt-3 mb-5 text-center">Clubs</h3>
+            <div class="clubs row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Art</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.</p>
+                        </div>
+                        <img src="images/clubs/art.jpg" alt="">
+                        
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Robotique</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.</p>
+                        </div>
+                        <img src="images/clubs/robotique.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Sport</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.</p>
+                        </div>
+                        <img src="images/clubs/sport.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Social</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.</p>
+                        </div>
+                        <img src="images/clubs/social.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Environnement</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.</p>
+                        </div>
+                        <img src="images/clubs/Environnement.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card card-join">
+                    <button class="btn btn-primary"><a class="nav-link" href="">Découvrir plus</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <?php include 'footer.php'; ?>
 </body>
 </html>
