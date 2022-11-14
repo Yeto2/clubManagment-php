@@ -38,7 +38,6 @@ nav.navbar.navbar-expand-lg.bg-dark.bg-gradient {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(images/club.jpg);
 }
 
 .container.hero-text {
@@ -124,8 +123,9 @@ h3:hover::after {
 }
 
 .card-join {
+    border: 2px #0d6efd85 dashed !important;
     border-color: transparent;
-    height: 290px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,7 +133,7 @@ h3:hover::after {
 }
 
 .card img {
-    height: 178px;
+    height: 200px;
     opacity: 0.8;
 }
 
@@ -150,9 +150,20 @@ footer {
 }
 .icons {
     padding: 12px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
 }
 
-/*  ---------------media query */
+.footTxt {
+    width: 65%;
+    margin: 0px auto;
+}
+
+
+
+/*  --------------- media query ------------------*/
 
 @media (min-width: 992px){
     .navbar-expand-lg .navbar-collapse {
@@ -169,5 +180,8 @@ footer {
     }
     .clubs{
         flex-direction: column;
+    }
+    .card-join{
+        height: 160px !important;
     }
 }
