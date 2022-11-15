@@ -7,10 +7,11 @@
     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
         <div class="navbar-nav ">
         <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
-        <a class="nav-link text-white" href="#">Clubs</a>
-        <a class="nav-link text-white" href="#">Contact</a>
+        <a class="nav-link text-white" href="#clubs">Clubs</a>
+        <a class="nav-link text-white" href="#contact">Contact</a>
         <!-- Button trigger modal -->
         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Join Club</button>
+        <button class="btn btn-success " >login</button>
     </div>
     </div>
     </div>

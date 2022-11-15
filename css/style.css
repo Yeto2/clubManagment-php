@@ -86,23 +86,6 @@ img.d-block {
 h3 {
     font-size: 80px;
 }
-h3::after {
-    content: '';
-    height: 3px;
-    width: 10%;
-    background-color: white;
-    position: absolute;
-    left: 45%;
-    bottom: -122px;
-    transition: 0.8s;
-    -webkit-transition: 0.8s;
-    -moz-transition: 0.8s;
-    -ms-transition: 0.8s;
-    -o-transition: 0.8s;
-}
-h3:hover::after {
-    background-color: black;
-}
 
 .club-section {
     margin: 20px auto;
@@ -134,7 +117,33 @@ h3:hover::after {
 
 .card img {
     height: 200px;
-    opacity: 0.8;
+    opacity: 0.9;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+.card:hover img {
+    height: 200px;
+    opacity: 0.6;
+}
+/** sponsor section */
+section.sponsor-section {
+    background: #efefefab;
+    height: 80vh;
+}
+.headding {
+    text-align: center;
+}
+.logos {
+    height: 83%;
+    display: flex;
+    align-items: center;
+}
+.logos img {
+    height: 110px;
+    margin: 0px 90px;
 }
 
 /** --------- footer */
@@ -154,6 +163,19 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     height: 60px;
+    width: 220px;
+    margin: 0px auto;
+}
+.icons svg{
+    cursor: pointer;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+.icons svg:hover{
+    color: #0d6efd;
 }
 
 .footTxt {

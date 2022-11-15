@@ -19,7 +19,7 @@
             <div class="container hero-text">
                 <h1>Clubs scolaires</h1>
                 <p class="text-center">youcode et offrir à ses adhérents un milieu agréable où ils peuvent améliorer leurs soft skills.</p>
-                <button class="btn btn-success"><a class="nav-link" href="">Découvrir plus</a></button>
+                <button class="btn btn-primary"><a class="nav-link" href="">Découvrir plus</a></button>
                 <div class="icon-scroll" data-v-0f1e6496=""></div>
             </div>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -37,7 +37,7 @@
             </div>
         </div>
         <!-- clubs section -->
-        <div class="container club-section">
+        <div class="container club-section" id="clubs">
             <h3 class="col-sm-12 mt-3 mb-5 text-center">Clubs</h3>
             <div class="clubs row">
                 <div class="col-sm-4">
@@ -46,7 +46,7 @@
                         <h5 class="card-title">Art</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.</p>
                         </div>
-                        <img src="images/clubs/art.jpg" alt="">
+                        <img src="images/clubs/art.jpg" alt="art">
                         
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                         <h5 class="card-title">Robotique</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.</p>
                         </div>
-                        <img src="images/clubs/robotique.jpg" alt="">
+                        <img src="images/clubs/robotique.jpg" alt="robotique">
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -65,7 +65,7 @@
                         <h5 class="card-title">Sport</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.</p>
                         </div>
-                        <img src="images/clubs/sport.jpg" alt="">
+                        <img src="images/clubs/sport.jpg" alt="sport">
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -74,7 +74,7 @@
                         <h5 class="card-title">Social</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.</p>
                         </div>
-                        <img src="images/clubs/social.jpg" alt="">
+                        <img src="images/clubs/social.jpg" alt="social">
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -83,7 +83,7 @@
                         <h5 class="card-title">Environnement</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.</p>
                         </div>
-                        <img src="images/clubs/Environnement.jpg" alt="">
+                        <img src="images/clubs/Environnement.jpg" alt="Environnement">
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -93,6 +93,20 @@
                 </div>
             </div>
         </div>
+        <section class="sponsor-section">
+            <div class="headding">
+                <h3>Sponsor</h3>
+            </div>
+            <div class="logos container">
+                <marquee behavior="smooth" direction="ltr">
+                    <img src="images/sponsors/freefire.png" alt="freefire" >
+                    <img src="images/sponsors/ocp.png" alt="ocp" >
+                    <img src="images/sponsors/simplon.png" alt="simplon" >
+                    <img src="images/sponsors/polylingua.png" alt="simplon" >
+                    
+                </marquee>
+            </div>
+        </section>
 
     <?php include 'footer.php'; ?>
 </body>
