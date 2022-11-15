@@ -29,6 +29,9 @@ nav.navbar.navbar-expand-lg.bg-dark.bg-gradient {
 .modal-backdrop.show {
     z-index: 3;
 }
+.navbar-nav button {
+    margin-left: 10px;
+}
 /** hero section */
 
 .hero-sections {
@@ -194,6 +197,14 @@ footer {
 .navbar-nav{
     align-items: center;
 }
+}
+@media (max-width: 768px){
+
+    .navbar-nav button {
+        margin-left: 0px !important;
+        width: 111px;
+        margin-bottom: 10px !important;
+    }
 }
 
 @media (max-width: 425px){

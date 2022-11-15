@@ -8,7 +8,7 @@
         <div class="mb-3 mt-3">
             <label for="classN" class="form-label">Class</label>
             <input type="text" class="form-control" id="classN" name="classN" required>
-                <div id="classHelp" class="form-text"></div>
+                <div id="classHelp" class="form-text text-danger pt-2"></div>
         <div>
         <div class="mb-3 mt-3">
             <label for="email" class="form-label">Email</label>
