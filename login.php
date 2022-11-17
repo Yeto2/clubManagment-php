@@ -2,19 +2,19 @@
     <div class="modal-body">
         <div class="mb-3 mt-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" required>
-                <div id="emailHelp" class="form-text"></div>
+            <input type="email" class="form-control" id="login" aria-describedby="loginHelp" name="login" required>
+                <div id="loginHelp" class="form-text text-danger pt-2"></div>
         </div>
 
         <div class="mb-3">
             <label for="cne" class="form-label">C N E</label>
-            <input type="text" class="form-control" id="cne" name="cne" required>
-                <div id="cneHelp" class="form-text"></div>
+            <input type="text" class="form-control" id="cneLog" name="cneLog" required>
+                <div id="cneLogHelp" class="form-text text-danger pt-2 pb-2"></div>
         <div>
     
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Register</button>
+            <button type="submit" id="submitLog" class="btn btn-primary">Login</button>
         </div>
     </div>
 </form>

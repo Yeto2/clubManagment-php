@@ -12,31 +12,31 @@
         <div>
         <div class="mb-3 mt-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" required>
-                <div id="emailHelp" class="form-text"></div>
+            <input type="email" class="form-control" id="emailRegister" aria-describedby="emailHelp" name="emailRegister" required>
+                <div id="emailHelp" class="form-text text-danger pt-2"></div>
         </div>
         <div class="mb-3 mt-3">
             <label for="select" class="form-label">Club</label>
             <select class="form-select" id="select" aria-label="Default select example" name="cards" required>
-                <option value="0" selected>Open this select menu</option>
-                <option value="1">Art</option>
-                <option value="2">Robotique</option>
-                <option value="3">Sport</option>
-                <option value="4">Social</option>
-                <option value="5">Sport</option>
-                <option value="6">Environnement</option>
+                <option value="nada" selected>Open this select menu</option>
+                <option value="Art">Art</option>
+                <option value="Robotique">Robotique</option>
+                <option value="Sport">Sport</option>
+                <option value="Social">Social</option>
+                <option value="Sport">Sport</option>
+                <option value="Environnement">Environnement</option>
             </select>
-                <div id="clubHelp" class="form-text"></div>
+                <div id="clubHelp" class="form-text text-danger pt-2"></div>
         </div>
         <div class="mb-3">
             <label for="cne" class="form-label">C N E</label>
-            <input type="text" class="form-control" id="cne" name="cne" required>
-                <div id="cneHelp" class="form-text"></div>
+            <input type="text" class="form-control" id="cartNat" name="cartNat" required>
+                <div id="cneHelp" class="form-text text-danger pt-2"></div>
         <div>
     
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Register</button>
+            <button type="submit" id="submit" class="btn btn-primary">Register</button>
         </div>
     </div>
 </form>
