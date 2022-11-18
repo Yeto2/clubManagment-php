@@ -19,4 +19,7 @@
         </svg>
         </div>
     </div>
+    <p class="copywrite">
+        20022 - 2023 | Copyright | <a clas="nav-link" href="https://github.com/Yeto2">Yeto</a>, All rights reserved
+    </p>
 </footer>

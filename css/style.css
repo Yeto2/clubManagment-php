@@ -138,6 +138,7 @@ section.sponsor-section {
 }
 .headding {
     text-align: center;
+    padding-top: 36px;
 }
 .logos {
     height: 83%;
@@ -158,7 +159,7 @@ footer {
     background: #00000078;
     color: white;
     text-align: center;
-    padding: 45px 0px;
+    padding: 45px 0px 0px;
 }
 .icons {
     padding: 12px 0px;
@@ -185,8 +186,15 @@ footer {
     width: 65%;
     margin: 0px auto;
 }
-
-
+p.copywrite {
+    padding: 10px 0px 15px !important;
+    font-weight: 600;
+    margin-bottom: 0px !important;
+}
+p.copywrite a {
+    text-decoration: none;
+    color: #038dfe;
+}
 
 /*  --------------- media query ------------------*/
 
