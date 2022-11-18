@@ -5,8 +5,9 @@ let loginHelp = document.getElementById('loginHelp')
 let cneLog = document.getElementById('cneLog')
 let cneLogHelp = document.getElementById('cneLogHelp')
 
-// ------------register input-----------------
 let submitLog = document.getElementById('submitLog')
+// ------------register input-----------------
+let submit = document.getElementById('submit')
 let nameHelp = document.getElementById('nameHelp')
 let fullname = document.getElementById('fullname')
 
@@ -40,6 +41,12 @@ let namereg = /^[a-zA-Z ]{5,30}$/ ;
         nameHelp.innerText =''
         fullname.setAttribute("style", "border-color:#2c8a04;");
     }
+    if (message) {
+        submit.classList.add("disabled");
+    }else{
+        submit.classList.remove("disabled");
+
+    }
 })
 // *--------------
 
@@ -60,6 +67,12 @@ classN.addEventListener('keyup' , (e)=>{
             classHelp.innerText =''
             classN.setAttribute("style", "border-color:#2c8a04;");
         }
+        if (message2) {
+            submit.classList.add("disabled");
+        }else{
+            submit.classList.remove("disabled");
+
+        }
     })
 // *--------------
 //* ---------- email
@@ -78,6 +91,12 @@ emailRegister.addEventListener('keyup' , (e)=>{
         }else{
             emailHelp.innerText =''
             emailRegister.setAttribute("style", "border-color:#2c8a04;");
+        }
+        if (message3) {
+            submit.classList.add("disabled");
+        }else{
+            submit.classList.remove("disabled");
+
         }
     })
 // *--------------
@@ -99,8 +118,15 @@ cartNat.addEventListener('keyup' , (e)=>{
             cneHelp.innerText =''
             cartNat.setAttribute("style", "border-color:#2c8a04;");
         }
+        if (message4) {
+            submit.classList.add("disabled");
+        }else{
+            submit.classList.remove("disabled");
+
+        }
     })
 // *--------------
+// *-------select-------
 
 selected.addEventListener('click',(e)=>{
     let message5 ;
@@ -112,8 +138,14 @@ selected.addEventListener('click',(e)=>{
         clubHelp.innerText =''
         selected.setAttribute("style", "border-color:#2c8a04;");
     }
+    if (message5) {
+        submit.classList.add("disabled");
+    }else{
+        submit.classList.remove("disabled");
 
+    }
 })
+// *--------------
 
 // -------------------------
 // -------------------------
@@ -127,15 +159,19 @@ login.addEventListener('keyup' , (e)=>{
             message6 = "This input should not be empty !"
             loginHelp.innerText= message6
             login.setAttribute("style", "border-color:#dc3545;");
-            // submitLog.className.add("disabled");
         }else if (emailreg.test(login.value) === false) {
             message6 = "Write a Valid email !"
             loginHelp.innerText= message6
             login.setAttribute("style", "border-color:#dc3545;");
-            // submitLog.className.add("disabled");
         }else{
             loginHelp.innerText =''
             login.setAttribute("style", "border-color:#2c8a04;");
+        }
+        if (message6) {
+            submitLog.classList.add("disabled");
+        }else{
+            submitLog.classList.remove("disabled");
+
         }
     })
 // *--------------
@@ -156,6 +192,14 @@ cneLog.addEventListener('keyup' , (e)=>{
         }else{
             cneLogHelp.innerText =''
             cneLog.setAttribute("style", "border-color:#2c8a04;");
+            
+        }
+        if (message7) {
+            submitLog.classList.add("disabled");
+        }else{
+            submitLog.classList.remove("disabled");
+
         }
     })
 // *--------------
+
