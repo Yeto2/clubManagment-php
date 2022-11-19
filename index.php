@@ -14,7 +14,7 @@
     <title>Club Managment</title>
 </head>
 <body>
-    <?php include 'navbar.php'; ?>
+    <?php include 'sections/navbar.php'; ?>
         <div class="hero-sections">
             <div class="container hero-text">
                 <h1>Clubs scolaires</h1>
@@ -108,7 +108,7 @@
             </div>
         </section>
 
-    <?php include 'footer.php'; ?>
+    <?php include 'sections/footer.php'; ?>
 
     <!-- Modal registze -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -118,7 +118,7 @@
         <h1 class="modal-title fs-5" id="exampleModalLabel">Join Club</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-                <?php include 'register-club.php'; ?>
+                <?php include 'forms/register-club.php'; ?>
     </div>
 </div>
 
