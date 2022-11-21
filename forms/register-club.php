@@ -1,4 +1,4 @@
-<form>
+<form action="data/registerData.php" method="POST">
     <div class="modal-body">
         <div class="mb-3">
             <label for="fullname" class="form-label">Full Name</label>
@@ -17,7 +17,7 @@
         </div>
         <div class="mb-3 mt-3">
             <label for="select" class="form-label">Club</label>
-            <select class="form-select" id="select" aria-label="Default select example" name="cards" required>
+            <select class="form-select" id="select" aria-label="Default select example" name="clubs" required>
                 <option value="nada" selected>Open this select menu</option>
                 <option value="Art">Art</option>
                 <option value="Robotique">Robotique</option>
@@ -36,7 +36,7 @@
     
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" id="submit" class="btn btn-primary">Register</button>
+            <button type="submit" id="submit" class="btn btn-primary" name="submit">Register</button>
         </div>
     </div>
 </form>
