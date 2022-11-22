@@ -1,3 +1,17 @@
+<?php
+    include 'data/dbCon.php';
+    // get data to get club data
+    $sql = "SELECT cl_name , id_club FROM clubs";
+    try {
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+        $results = $stmt->fetchAll();
+        
+    } catch (Exeption $e) {
+        echo ($e->getMessage());
+    }
+    
+?>
 <form action="data/registerData.php" method="POST">
     <div class="modal-body">
         <div class="mb-3">
@@ -19,12 +33,11 @@
             <label for="select" class="form-label">Club</label>
             <select class="form-select" id="select" aria-label="Default select example" name="clubs" required>
                 <option value="nada" selected>Open this select menu</option>
-                <option value="Art">Art</option>
-                <option value="Robotique">Robotique</option>
-                <option value="Sport">Sport</option>
-                <option value="Social">Social</option>
-                <option value="Sport">Sport</option>
-                <option value="Environnement">Environnement</option>
+                <?php foreach ($results as $result ){ ?>
+                    <option value=<?php echo $result["id_club"] ?> ><?php echo $result["cl_name"] ?></option>
+                
+                <?php } ?>
+
             </select>
                 <div id="clubHelp" class="form-text text-danger pt-2"></div>
         </div>

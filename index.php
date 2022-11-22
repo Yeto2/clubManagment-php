@@ -16,6 +16,11 @@
 <body>
     <?php include 'sections/navbar.php'; ?>
         <div class="hero-sections">
+            <?php if (isset($_GET['error'])) {?>
+                <div class="alert alert-success" role="alert" id="alert">
+                    <?=$_GET['error']?>
+                </div>
+            <?php } ?>
             <div class="container hero-text">
                 <h1>Clubs scolaires</h1>
                 <p class="text-center">youcode et offrir à ses adhérents un milieu agréable où ils peuvent améliorer leurs soft skills.</p>
@@ -122,5 +127,16 @@
     </div>
 </div>
 
+<script>
+    let alert = document.getElementById('alert')
+    
+    if(alert){setTimeout(function() {
+        alert.style.display ="none"
+        window.location.href = "index.php";
+    },2500)
+    }else{
+        alert.style.display ="block"
+    }
+</script>
 </body>
 </html>
