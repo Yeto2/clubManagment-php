@@ -25,7 +25,6 @@ let clubHelp = document.getElementById('clubHelp')
 
 //* ---------- fullname
 fullname.addEventListener('keyup' , (e)=>{
-    
 let message ;
 let namereg = /^[a-zA-Z ]{5,30}$/ ; 
 
