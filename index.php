@@ -136,8 +136,8 @@
     
     if(alert){setTimeout(function() {
         alert.style.display ="none"
-        window.location.href = "index.php";
-    },2500)
+        // window.location.href = "index.php";
+    },3500)
     }else{
         alert.style.display ="block"
     }

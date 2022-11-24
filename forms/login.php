@@ -1,8 +1,8 @@
-<form>
+<form action="data/loginData.php" method="POST">
     <div class="modal-body">
         <div class="mb-3 mt-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="login" aria-describedby="loginHelp" name="login" required>
+            <input type="email" class="form-control" id="login" aria-describedby="loginHelp" name="user" required>
                 <div id="loginHelp" class="form-text text-danger pt-2"></div>
         </div>
 
@@ -14,7 +14,7 @@
     
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" id="submitLog" class="btn btn-primary">Login</button>
+            <button type="submit" id="submitLog" class="btn btn-primary" name="login">Login</button>
         </div>
     </div>
 </form>

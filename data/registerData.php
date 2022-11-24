@@ -11,8 +11,6 @@ if(isset($_POST['submit'])){
     $role = "user";
 
 
-    // $email = $_POST['email'];
-    // $cne = $_POST['cne'];
 
     $sql_check = "SELECT fullname , email , cne FROM members WHERE fullname=? OR email=? OR cne =? ";
     $stmt_check = $conn->prepare($sql_check);
