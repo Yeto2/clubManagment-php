@@ -11,17 +11,26 @@ if(isset($_POST['submit'])){
     $role = "user";
 
 
+    // $email = $_POST['email'];
+    // $cne = $_POST['cne'];
+
+    $sql_check = "SELECT fullname , email , cne FROM members WHERE fullname=? OR email=? OR cne =? ";
+    $stmt_check = $conn->prepare($sql_check);
+    $stmt_check->execute([$fullname,$email,$cne]);
+    $results = $stmt_check->fetchAll();
 
      // insert data to database
     $sql = "INSERT INTO members (fullname, class, email, id_club, cne, role) VALUES (:fullname, :class, :email, :id_club, :cne, :role)";
     $stmt = $conn->prepare($sql);
 
-    $stmt->execute([':fullname' => $fullname, ':class' => $classN, ':email' => $email, ':id_club' =>$club, ':cne' => $cne , ':role' => $role]);
 
-    header ("location: ../index.php?error=account created successfully");
+    if (!$results) {
+        $stmt->execute([':fullname' => $fullname, ':class' => $classN, ':email' => $email, ':id_club' =>$club, ':cne' => $cne , ':role' => $role]);
+        header ("location: ../index.php?success=account created successfully");
+    }else {
+        header ("location: ../index.php?error=Information already exist");
+    }
 }else{
     header ("location: ../index.php");
 }
 ?>
-
-

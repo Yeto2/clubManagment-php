@@ -16,11 +16,15 @@
 <body>
     <?php include 'sections/navbar.php'; ?>
         <div class="hero-sections">
-            <?php if (isset($_GET['error'])) {?>
+            <?php if (isset($_GET['success'])) {?>
                 <div class="alert alert-success" role="alert" id="alert">
+                    <?=$_GET['success']?>
+                </div>
+            <?php }elseif (isset($_GET['error'])) {?>
+                <div class="alert alert-danger" role="alert" id="alert">
                     <?=$_GET['error']?>
                 </div>
-            <?php } ?>
+            <?php }?>
             <div class="container hero-text">
                 <h1>Clubs scolaires</h1>
                 <p class="text-center">youcode et offrir à ses adhérents un milieu agréable où ils peuvent améliorer leurs soft skills.</p>

@@ -24,27 +24,18 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $cne = $_POST['cne'];
 
-    $sql_check = "SELECT email , cne FROM members WHERE email = '$email' OR cne = '$cne' ";
+    $sql_check = "SELECT email , cne FROM members WHERE email=? OR cne =? ";
     $stmt_check = $conn->prepare($sql_check);
-    $stmt_check->execute();
+    $stmt_check->execute([$email,$cne]);
     $results = $stmt_check->fetchAll();
-    foreach ($results as $key) {
-        $is_email = $key["email"];
-        $is_cne = $key["cne"];
-    }
-   
 
-    echo ($is_email) ;
-    echo '-----';
-    echo '-----';
-    echo ($is_cne) ;
-    if ($email = $îs_email) {
-        echo "email already exist";
-    }elseif ($cne = $is_cne) {
-        echo "cne already exist";
+    
+    if ($results) {
+        echo "email exist";
     }else {
-        echo "go go go";
+        echo "ready to go";
     }
+
     
 }
 ?>
