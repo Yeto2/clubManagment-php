@@ -72,3 +72,10 @@ nav.navbar.navbar-expand-lg.bg-dark.bg-gradient {
     justify-content: flex-end;
 }
 }
+
+/* ---- */
+
+.panel {
+padding: 50px 0px 0px;
+height: 100vh;
+}

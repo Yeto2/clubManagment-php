@@ -29,21 +29,55 @@
                             <?=$_GET['error']?>
                         </div>
                     <?php }?>
+            <!------------------------------------------->
                 
-                <div class="panel">
-                    <?php
-                    
-                    if ($_SESSION["email"]) {
-                        echo "hello" .'  '. $_SESSION["email"];
-                    }
-                    ?>
-                    
-                    <form action="../data/logout.php" method="get">
-                        <input class="btn btn-danger" type="submit" value="logout" name="logout">
-                    </form>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    <!-- Modal ADD Member -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Join Club</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                    <?php include '../forms/addMember.php'; ?>
             </div>
-            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>
     let alert = document.getElementById('alert')

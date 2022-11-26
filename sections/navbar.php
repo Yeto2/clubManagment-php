@@ -5,29 +5,28 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <?php
-        if (!isset($_SESSION["email"]) || empty($_SESSION["cne"]))
-        {
-        ?>
+    <?php if (!isset($_SESSION["email"]) || empty($_SESSION["cne"])){ ?>
+
     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
         <div class="navbar-nav ">
-        <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
-        <a class="nav-link text-white" href="#clubs">Clubs</a>
-        <a class="nav-link text-white" href="#contact">Contact</a>
+            <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+            <a class="nav-link text-white" href="#clubs">Clubs</a>
+            <a class="nav-link text-white" href="#contact">Contact</a>
         </div>
         <!-- Button trigger modal -->
-        <button class="btn btn-success"data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            <button class="btn btn-success"data-bs-toggle="modal" data-bs-target="#loginModal" name="login">Login</button>
     </div>     
     <?php }else{?>
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
             <div class="navbar-nav ">
-
-            <a class="nav-link active text-white" aria-current="page" href="#home">Add club</a>
-            
-            <a class="nav-link text-white" href="#clubs">Add member</a>
+                <a class="nav-link text-white" href="../pages/superAdmin.php">Home</a>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Cllub</button>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Member</button>
             </div>
-            <form action="../data/logout.php" method="get">
-                        <input class="btn btn-danger" type="submit" value="logout" name="logout">
-                    </form>
+            <form action="../data/logout.php" >
+                <input class="btn btn-danger" type="submit" value="logout" name="logout">
+            </form>
+    </div>
             <?php
         }
         ?>
@@ -51,6 +50,21 @@
         <?php include 'forms/login.php'; ?>
 </div>
 </div>
-
 </div>
+
+
+    <!-- Modal ADD club -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Add Club</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                    <?php include '../forms/addClub.php'; ?>
+            </div>
+        </div>
+    </div>
+
+
 </nav>
