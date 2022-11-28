@@ -28,7 +28,6 @@
             <div class="container hero-text">
                 <h1>Clubs scolaires</h1>
                 <p class="text-center">youcode et offrir à ses adhérents un milieu agréable où ils peuvent améliorer leurs soft skills.</p>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Join Club</button>
                 <div class="icon-scroll" data-v-0f1e6496=""></div>
             </div>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -119,18 +118,7 @@
 
     <?php include 'sections/footer.php'; ?>
 
-    <!-- Modal registze -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Join Club</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                    <?php include 'forms/register-club.php'; ?>
-            </div>
-        </div>
-    </div>
+
 
 <script>
     let alert = document.getElementById('alert')
